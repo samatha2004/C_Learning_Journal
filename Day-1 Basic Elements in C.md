@@ -1,4 +1,4 @@
-```
+
 C Programming – Day 1 Notes  
 Date: 147-06-2025  
 By: Samatha
@@ -117,4 +117,4 @@ ________________________
 
 Code:
 printf("Hello, World!");
-```
+
