@@ -1,0 +1,139 @@
+```
+C Programming – Identifiers, Keywords and Data Types  
+Date: 01-07-2025  
+By: Samatha
+
+______________________________________________________
+
+Identifiers  
+______________
+
+Identifiers are user-defined names given to memory locations such as variables, arrays, functions, etc.
+
+Example:  
+Code:  
+int val;  
+val = 25;  
+
+Explanation:  
+val is an identifier.  
+It is used to store the value 25.  
+The assignment operator = assigns the value.  
+From the system point of view, 4 bytes of memory are allocated for int val.
+
+______________________________________________________
+
+Rules for Identifiers  
+___________________________
+
+1. Identifiers cannot be keywords  
+2. They can contain alphabets (uppercase and lowercase), digits (0–9), and underscore (_)  
+3. They must begin with an alphabet or underscore (_)  
+4. They cannot begin with a digit  
+5. C is a case-sensitive language (val and VAL are different)  
+6. White spaces and special characters are not allowed in identifiers  
+7. You cannot declare two variables with the same name within the same function
+
+Example - Invalid:  
+int val;  
+int val;   // Error: redefinition of variable  
+
+Example - Valid:  
+int val;  
+int VAL;   // Different identifiers because of case sensitivity
+
+______________________________________________________
+
+Length of an Identifier  
+_______________________________________________
+
+There is no fixed limit on the identifier name length as per the language standard.  
+However, compilers usually recognize a limited number of characters for uniqueness.  
+
+Examples:  
+- 32-bit compiler (like GCC on Linux): considers up to 31 characters  
+- Turbo C (16-bit compiler on Windows): may limit to 8 characters  
+
+These rules apply when naming variables, arrays, functions, structures, unions, etc.
+
+______________________________________________________
+
+Keywords  
+____________
+
+Keywords are predefined and reserved words in C.  
+They have fixed meaning and cannot be used as identifiers.  
+All keywords are in lowercase.
+
+Examples of Keywords:  
+int, float, char, double, long, short  
+if, else, while, for, switch, case  
+auto, static, register, extern  
+return, break, continue, goto, sizeof
+
+______________________________________________________
+
+Data Types in C  
+__________________
+
+A data type specifies:  
+1. How many bytes the variable occupies  
+2. The type of data stored in the variable  
+3. The range of values that can be stored  
+
+Types of Data:  
+
+Primitive or Basic Data Types:  
+char     - 1 byte  
+int      - 4 bytes  
+float    - 4 bytes  
+double   - 8 bytes  
+long     - 8 bytes  
+short    - 2 bytes  
+
+Derived Data Types:  
+Arrays  
+Structures  
+Unions  
+Functions  
+
+Examples:  
+char ch = 'A';         // 1 byte  
+int val = 25;          // 4 bytes  
+long lval = 123456L;   // 8 bytes  
+float fval = 12.3f;    // 4 bytes  
+double dval = 45.67;   // 8 bytes  
+
+______________________________________________________
+
+Data Type Usage  
+____________________
+
+char      - used to store characters  
+int       - used to store integer values  
+float     - used to store decimal (real) values  
+double    - used to store large decimal values  
+
+Derived types like arrays and structures are used to store collections or grouped data.
+
+______________________________________________________
+
+Number Systems  
+_________________________________
+
+Decimal (base 10): uses digits 0–9  
+Octal (base 8): starts with 0 (example: 017)  
+Hexadecimal (base 16): starts with 0x (example: 0xA5)  
+Binary (base 2): not directly supported in C, but logic-based representation is possible
+
+______________________________________________________
+
+Summary  
+___________
+
+Identifiers are names used for memory locations like variables and functions  
+They must follow certain rules and cannot be keywords  
+Keywords are predefined and reserved  
+Data types define the memory size, type, and range of values of a variable  
+C is case-sensitive and system-dependent in memory usage
+```
